@@ -48,7 +48,22 @@ CodiceProdotto varchar (10),
 Prezzo double,
 Disponibilità int,
 Fornitore int ,
+primary key (IDProdotto),
 foreign key (Fornitore) references Fornitori (IDFornitore)
+
+);
+
+
+CREATE TABLE Ordini (
+IDOrdine int auto_increment,
+OraOrdine datetime,
+OraConsegna datetime,
+evaso boolean,
+IDCliente int,
+IDProdotto int,
+primary key (IDOrdine),
+foreign key (IDCliente) references Utenti (IDUtente),
+foreign key (IDProdotto) references Prodotto (IDProdotto)
 
 );
 
@@ -57,7 +72,8 @@ CREATE TABLE Review (
 IDReview int auto_increment,
 TestoReview varchar (500),
 Ordine int,
-foreign key (Ordine) references Ordini (IDOrdini)
+primary key (IDReview),
+foreign key (Ordine) references Ordini (IDOrdine)
 
 );
 
