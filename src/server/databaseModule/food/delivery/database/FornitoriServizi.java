@@ -1,4 +1,4 @@
-package it.tabelle;
+package food.delivery.database;
 import java.sql.*;
 import java.util.*;
 

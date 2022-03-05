@@ -1,4 +1,4 @@
-package it.tabelle;
+package food.delivery.database;
 
 public class TabellaFornitoriServizi {
     private int IDFornitore;

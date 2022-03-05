@@ -1,4 +1,4 @@
-package it.prova;
+package food.delivery.database;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

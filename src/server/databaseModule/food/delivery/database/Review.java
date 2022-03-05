@@ -1,4 +1,4 @@
-package it.prova;
+package food.delivery.database;
 
 
 public class Review {
